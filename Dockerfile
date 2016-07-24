@@ -9,7 +9,7 @@ RUN apt-get update && \
     apt-get install -y oracle-java8-installer && \
     apt-get clean
 
-ADD /sample-rest-1.0-SNAPSHOT.jar /tmp
+ADD ../sample-rest-1.0-SNAPSHOT.jar /tmp
 
 PUBLISH 8080:8080
 
